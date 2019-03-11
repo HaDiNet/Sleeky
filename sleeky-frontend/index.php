@@ -56,6 +56,7 @@ include 'header.php';
 				<section class="link-section">
 					<input type="text" class="short-url" style="text-transform:none;" value="<?php echo $shorturl; ?>">
 					<button class="short-url-button" data-clipboard-text="<?php echo $shorturl; ?>">Copy</button>
+                                        <span class="info"><img src="<?php echo yourls_esc_url( $shorturl . ".qr") ?>" alt="QR-Code"></span>
 					<span class="info">View info &amp; stats at <a href="<?php echo $shorturl; ?>+"><?php echo $url; ?>+</a></span>
 				</section>
 			</div>
